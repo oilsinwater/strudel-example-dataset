@@ -13,6 +13,10 @@ The project demonstrates modern data visualization techniques and filtering capa
 - **Shareable Links**: Share filtered views and visualizations with persistent URLs
 - **Real-time Updates**: Live announcements and data-driven summaries
 
+### Screenshots
+
+![Home page](images/home.gif)
+
 ## Dataset Information
 
 The Palmer Penguins dataset contains physical measurements and biological attributes of penguins from three species:

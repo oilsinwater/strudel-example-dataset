@@ -83,7 +83,8 @@ function Index() {
       <Container
         maxWidth="lg"
         sx={{
-          py: { xs: 8, md: 12 },
+          pt: { xs: 3, md: 4 },
+          pb: { xs: 8, md: 10 },
         }}
       >
         <Stack spacing={{ xs: 8, md: 10 }}>
@@ -299,7 +300,14 @@ function Index() {
 
           <Box component="section">
             <Stack spacing={3}>
-              <Stack spacing={1.5}>
+              <Stack
+                spacing={1.5}
+                sx={(theme) => ({
+                  [theme.breakpoints.up('md')]: {
+                    paddingLeft: theme.spacing(1.5),
+                  },
+                })}
+              >
                 <Typography variant="overline" color="text.secondary">
                   Explore the research
                 </Typography>

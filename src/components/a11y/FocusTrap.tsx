@@ -8,7 +8,7 @@ interface FocusTrapProps {
 
 export const FocusTrap = forwardRef<HTMLDivElement, FocusTrapProps>(
   ({ children, active = true, restoreFocus = true }, ref) => {
-    const containerRef = useRef<HTMLDivElement>(null);
+    const containerRef = useRef<HTMLDivElement | null>(null);
     const lastActiveElementRef = useRef<Element | null>(null);
 
     // Merge refs so the parent can access the container div

@@ -102,3 +102,4 @@ _*.config.ts
 # BMAD (local only)
 # BMAD (local only)
 .temp/
+.aider*
